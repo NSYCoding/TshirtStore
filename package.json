@@ -1,0 +1,23 @@
+{
+  "name": "tshirtstore",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NSYCoding/TshirtStore.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NSYCoding/TshirtStore/issues"
+  },
+  "homepage": "https://github.com/NSYCoding/TshirtStore#readme",
+  "dependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}
