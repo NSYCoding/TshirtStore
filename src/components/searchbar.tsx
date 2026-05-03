@@ -177,7 +177,7 @@ export default function SearchBar({ onSearchResults, onSearchStateChange }: Sear
         };
 
         fetchAndTranslateProducts();
-    }, [query, translateTo, onSearchResults, onSearchStateChange]);
+    }, [query, translateTo, onSearchResults, onSearchStateChange, translateLanguageMap]);
 
     return (
         <div className="search-bar">
