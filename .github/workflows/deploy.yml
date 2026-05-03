@@ -28,7 +28,7 @@ jobs:
       - name: Build site
         run: npm run build
         env:
-         PUBLIC_URL: https://nsycoding.github.io/TshirtStore
+         PUBLIC_URL: /${{ github.event.repository.name }}
 
       - name: Push build to gh-pages branch
         uses: peaceiris/actions-gh-pages@v4
