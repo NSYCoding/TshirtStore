@@ -16,7 +16,7 @@ export default function SearchBar({ onSearchResults, onSearchStateChange }: Sear
     const SpeechRecognition = window.SpeechRecognition || (window as any).webkitSpeechRecognition;
     const recognition = SpeechRecognition ? new SpeechRecognition() : null;
 
-    const languageMap = useMemo(()=>({
+    const languageMap = useMemo<Record<string, string>>(()=>({
         'english': 'en-US',
         'spanish': 'es-ES',
         'dutch': 'nl-NL',
@@ -30,7 +30,7 @@ export default function SearchBar({ onSearchResults, onSearchStateChange }: Sear
         'arabic': 'ar-SA'
     }), []);
 
-    const translateLanguageMap = useMemo(()=>({
+    const translateLanguageMap = useMemo<Record<string, string>>(()=>({
         'english': 'en',
         'spanish': 'es',
         'dutch': 'nl',
