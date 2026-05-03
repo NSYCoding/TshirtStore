@@ -28,7 +28,7 @@ export default function SearchBar({ onSearchResults, onSearchStateChange }: Sear
         'hindi': 'hi-IN',
         'italian': 'it-IT',
         'arabic': 'ar-SA'
-    }));
+    }), []);
 
     const translateLanguageMap = useMemo(()=>({
         'english': 'en',
@@ -42,7 +42,7 @@ export default function SearchBar({ onSearchResults, onSearchStateChange }: Sear
         'hindi': 'hi',
         'italian': 'it',
         'arabic': 'ar'
-    }));
+    }), []);
 
     const translateText = async (text: string, targetLang: string): Promise<string> => {
         if (targetLang === 'en' || targetLang === 'english') return text;
