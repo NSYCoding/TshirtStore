@@ -73,7 +73,7 @@ export default function SearchBar({ onSearchResults, onSearchStateChange }: Sear
         recognition.onstart = () => {
             console.log("Voice recognition started. Try speaking into the microphone.");
         };
-        recognition.onresult = (event: SpeechRecognitionEvent) => {
+        recognition.onresult = (event: any) => {
             const transcript = event.results[0][0].transcript;
             console.log("You said:", transcript);
             setQuery(transcript.toLowerCase());
