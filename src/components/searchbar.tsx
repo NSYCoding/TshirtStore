@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useMemo } from 'react';
 import { Product } from '../types';
 
 type SearchBarProps = {
@@ -16,7 +16,7 @@ export default function SearchBar({ onSearchResults, onSearchStateChange }: Sear
     const SpeechRecognition = window.SpeechRecognition || (window as any).webkitSpeechRecognition;
     const recognition = SpeechRecognition ? new SpeechRecognition() : null;
 
-    const languageMap: { [key: string]: string } = {
+    const languageMap = useMemo(()=>({
         'english': 'en-US',
         'spanish': 'es-ES',
         'dutch': 'nl-NL',
@@ -28,9 +28,9 @@ export default function SearchBar({ onSearchResults, onSearchStateChange }: Sear
         'hindi': 'hi-IN',
         'italian': 'it-IT',
         'arabic': 'ar-SA'
-    };
+    }));
 
-    const translateLanguageMap: { [key: string]: string } = {
+    const translateLanguageMap = useMemo(()=>({
         'english': 'en',
         'spanish': 'es',
         'dutch': 'nl',
@@ -42,7 +42,7 @@ export default function SearchBar({ onSearchResults, onSearchStateChange }: Sear
         'hindi': 'hi',
         'italian': 'it',
         'arabic': 'ar'
-    };
+    }));
 
     const translateText = async (text: string, targetLang: string): Promise<string> => {
         if (targetLang === 'en' || targetLang === 'english') return text;
