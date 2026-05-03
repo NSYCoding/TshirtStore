@@ -12,6 +12,7 @@ export default function SearchBar({ onSearchResults, onSearchStateChange }: Sear
     const [translateTo, setTranslateToLanguage] = useState('english');
     const [isTranslating, setIsTranslating] = useState(false);
 
+    // @ts-expect-error
     const SpeechRecognition = window.SpeechRecognition || (window as any).webkitSpeechRecognition;
     const recognition = SpeechRecognition ? new SpeechRecognition() : null;
 
