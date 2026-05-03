@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/TshirtStore/static/css/main.7bca1961.css",
-    "main.js": "/TshirtStore/static/js/main.36664ef3.js",
-    "index.html": "/TshirtStore/index.html",
-    "main.7bca1961.css.map": "/TshirtStore/static/css/main.7bca1961.css.map",
-    "main.36664ef3.js.map": "/TshirtStore/static/js/main.36664ef3.js.map"
+    "main.css": "https://nsycoding.github.io/TshirtStore/static/css/main.7bca1961.css",
+    "main.js": "https://nsycoding.github.io/TshirtStore/static/js/main.36664ef3.js",
+    "index.html": "https://nsycoding.github.io/TshirtStore/index.html",
+    "main.7bca1961.css.map": "https://nsycoding.github.io/TshirtStore/static/css/main.7bca1961.css.map",
+    "main.36664ef3.js.map": "https://nsycoding.github.io/TshirtStore/static/js/main.36664ef3.js.map"
   },
   "entrypoints": [
     "static/css/main.7bca1961.css",
