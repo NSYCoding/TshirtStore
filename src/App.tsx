@@ -1,4 +1,5 @@
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+// @ts-ignore
 import './App.css';
 import Shop from './pages/Shop';
 import Cart from './pages/Cart';
